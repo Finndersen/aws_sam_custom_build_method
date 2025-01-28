@@ -1,0 +1,18 @@
+Resources:
+  LambdaA:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: function_a.app.lambda_handler
+      Runtime: python3.11
+      CodeUri: .
+    Metadata:
+      BuildMethod: makefile
+
+  LambdaB:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: function_b.app.lambda_handler
+      Runtime: python3.11
+      CodeUri: .
+    Metadata:
+      BuildMethod: makefile
