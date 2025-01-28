@@ -43,11 +43,11 @@ build/
 ├── LambdaA/
 │   ├── function_a/
 │   ├── shared/
-│   └── ... <dependencies>
+│   └── <dependencies>
 ├── LambdaB/
 │   ├── function_b/
 │   ├── shared/
-│   └── ... <dependencies>
+│   └── <dependencies>
 ```
 
 ## Usage
