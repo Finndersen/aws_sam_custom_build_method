@@ -10,11 +10,8 @@ In you have a project involving multiple Lambda functions with shared code, havi
 my-project/
 ├── src/
 │   ├── function_a/
-│   │   └── app.py
 │   ├── function_b/
-│   │   └── app.py
 │   └── shared/
-│       └── shared_module.py
 ├── tests/
 ├── requirements.txt
 └── sam-template.yaml
@@ -28,12 +25,12 @@ build/
 │   ├── function_a/
 │   ├── function_b/     # This is not needed
 │   ├── shared/
-│   └── ... <dependencies>
+│   └── <dependencies>
 ├── LambdaB/
 │   ├── function_a/     # This is not needed
 │   ├── function_b/
 │   ├── shared/
-│   └── ... <dependencies>
+│   └── <dependencies>
 ```
 
 ## Solution
