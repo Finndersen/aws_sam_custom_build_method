@@ -16,7 +16,18 @@ my-project/
 ├── requirements.txt
 └── sam-template.yaml
 ```
+And with a SAM resource configuration like:
+```yaml
+Resources:
+  LambdaA:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: function_a.app.lambda_handler
+      Runtime: python3.11
+      CodeUri: src/
 
+  ...
+```
 The standard AWS SAM build method will package all the source code into each Lambda, meaning each Lambda will contain code it does not need, and will have a new version published even when its own relevant code has not changed.
 Example build output:
 ```
