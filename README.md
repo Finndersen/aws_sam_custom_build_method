@@ -1,6 +1,6 @@
 # Custom SAM Build Method for Multi-lambda Monorepo 
 
-A basic project template to demonstrate a custom AWS ASM build method which allows each Lambda to only contain the source code it needs.
+A basic project template to demonstrate using a custom AWS SAM build method so that each Lambda only contain the source code it needs.
 
 ## Issue with Standard build method
 
